@@ -1,0 +1,38 @@
+{
+  "name": "react-blogapp",
+  "version": "1.0.0",
+  "description": "blog app using redux",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build ",
+    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
+    "build:prod": "webpack -p && cp src/index.html dist/index.html"
+  },
+  "keywords": [
+    "redux",
+    "blogs"
+  ],
+  "author": "Ashvin khairnar",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "immutable": "^3.8.2",
+    "mongoose": "^4.13.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2"
+  }
+}
